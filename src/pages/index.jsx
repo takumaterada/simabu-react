@@ -6,10 +6,10 @@ import { Header } from "../components/Header";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [foo, setFoo] = useState(1);
+  const [count, setCount] = useState(1);
   // let foo = 1;
   const handleClick = (e) => {
-    setFoo((foo) => foo + 1);
+    setCount((count) => count + 1);
   };
 
   useEffect(() => {
