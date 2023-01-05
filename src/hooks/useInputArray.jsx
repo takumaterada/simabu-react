@@ -3,6 +3,7 @@ import { useCallback, useState } from "react";
 export const useInputArray = () => {
   const [text, setText] = useState("");
   const [array, setArray] = useState([]);
+
   const handleChange = useCallback((e) => {
     if (e.target.value.length > 5) {
       alert("５文字以内で");
